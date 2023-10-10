@@ -1,0 +1,30 @@
+GET http://localhost:5000/api/chat
+
+
+###
+
+GET http://localhost:5000/api/chat/617a077e18c25468bc7c4dd4
+
+###
+//Authentication
+POST http://localhost:5000/api/user
+Content-Type: application/json
+
+{
+"name": "guest",
+"email": "guest@gmail.com",
+"password":"haha"
+}
+
+###
+//login
+POST http://localhost:5000/api/user/login
+Content-Type: application/json
+
+{
+"email": "hadid@gmail.com",
+"password":"haha"
+}
+
+###
+GET http://localhost:5000/api/user?search=gi
